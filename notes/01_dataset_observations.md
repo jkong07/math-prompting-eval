@@ -13,3 +13,6 @@ Schema: problem, solution, level, type, answer
 - Decimals: 1.36
 - Complex expressions with nested LaTeX (sqrt, fractions, etc.)
 - 92.9% of answers are 0-16 chars; long tail is where equivalence checking gets hard
+
+05/06/26
+Validated extract_boxed against answer column on test split: 500/500 match. Note: dataset's answer column likely produced via similar \boxed{} extraction, so this validates convention-matching rather than absolute correctness. The real extractor stress test will come from hand-validating against actual model outputs once Phase 2 produces them.
