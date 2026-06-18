@@ -62,7 +62,7 @@ def run(
             "model": model,
             "problem_id": prob.get("unique_id", i),
             "level": prob["level"],
-            "type": prob["type"],
+            "subject": prob["subject"],
             "answer": prob["answer"],
             "predicted": predicted,
             "correct": correct,
