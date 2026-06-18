@@ -1,6 +1,6 @@
 from datasets import load_dataset
 from mpe.extraction import extract_boxed
-ds = load_dataset("nlile/hendrycks-MATH-benchmark", split="test")
+ds = load_dataset("nlile/hendrycks-MATH-benchmark", split="train")
 print(len(ds))
 matches = mismatches = nones = 0
 examples = []
