@@ -10,7 +10,6 @@ def _get_dataset():
         _DS = load_dataset("nlile/hendrycks-MATH-benchmark", split="train")
     return _DS
 
-
 def get_problems(n_per_level: int, seed: int = 42) -> list[dict]:
     """Return a list of n_per_level problems from each of the 5 difficulty levels.
     Total returned = n_per_level * 5. Sampling is deterministic given the seed."""
